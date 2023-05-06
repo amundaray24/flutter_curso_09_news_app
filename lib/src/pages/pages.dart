@@ -1,0 +1,1 @@
+export 'package:flutter_curso_09_news_app/src/pages/tabs_page.dart';
