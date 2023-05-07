@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_curso_09_news_app/src/models/navigation_model.dart';
+import 'package:flutter_curso_09_news_app/src/pages/pages.dart';
 import 'package:provider/provider.dart';
 
 class TabsPage extends StatelessWidget {
@@ -55,12 +56,8 @@ class _Pages extends StatelessWidget {
       controller: navigationModel.pageController,
       onPageChanged: (i) => navigationModel.currentPage = i,
       children: const [
-        Center(
-          child: Text('page1'),
-        ),
-        Center(
-          child: Text('page2'),
-        )
+        ForYouPage(),
+        NewsPage(),
       ],
     );
   }
